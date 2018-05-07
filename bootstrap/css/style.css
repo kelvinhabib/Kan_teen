@@ -1,0 +1,738 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+.des{
+	background: rgba(139, 195, 74, 0.68);
+	padding: 10px;
+	border-left: 4px solid green;
+	width: 100%;
+}
+.ps p{
+	text-align: justify;
+	color: #496b53;
+}
+
+.popjudul{
+
+}
+.konfirm{
+	min-height: 6rem;
+    padding: 1rem;
+    width: 40%;
+    margin: 0 auto;
+    float: right;
+    font-size: 2rem;
+    border-radius: 3rem;
+}
+
+p{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 2rem;
+}
+/*
+* Style untuk header beserta menu-menu nya
+*
+*/
+.headerku{
+	width: 100%;
+	min-height: 400px;
+	background: url(../../bingke/gambar/bghead.png);
+	position: relative;
+	background-image: contain;
+}
+.logoku{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 25px;
+
+}
+.brandku{
+	min-width: 100%;
+    min-height: 50px;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    background: #a94442;
+    margin-top: 3rem;
+}
+.menuku{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.menusub{
+	margin: 0;
+	background: #903b39;
+}
+.menusub li{
+	list-style-type: none;
+	display: inline-block;
+
+}
+.menusub li a{
+	text-decoration: none;
+	color: #171717de;
+	text-align: left;
+	font-size: 3rem;
+	display: block;
+	color: white;
+	padding: 14px;
+	transition: background .4s linear;
+}
+.menusub li a:hover{
+    border-bottom: 5px solid #6f2e2c;
+}
+.aktif{
+    border-bottom: 5px solid #50211f;
+    color: white!important;
+}
+.drpdown-menu{
+	display: none;
+	background: white;
+	position: absolute;
+	z-index: 1000;
+	text-align: left;
+	box-shadow: 0 0 3px 2px rgba(0,0,0,.3);
+}
+.drpdown-menu li{
+	margin-bottom: 6px;
+	background: white;
+}
+.drpdown-menu li a{
+	min-width: 300px;
+	color: black;
+	margin: 0;
+}
+
+.drp-menu{
+	position: relative;
+}
+.drp-menu:hover .drpdown-menu{
+	display: block;
+}
+
+.drpdown-menu li a{
+    width: 200px;
+    padding-left: 1.9rem;
+    font-size: 2.5rem;
+    transition: all .1s ease;
+}
+.drpdown-menu li a:hover{
+	background: white;
+	font-size: 4rem;
+	border-left: 5px solid #6f2e2c;
+	border-bottom:none;
+}
+
+/*
+* Style untuk pop up
+* Keyframes harus pake vendor prefixes, untuk dukungan old browser (tambbahin yaaa :D )
+*/
+.pop-up{
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	overflow-y: auto;
+	display: none;
+	transition: all .2s linear;
+	animation: pop .3s ease;
+}
+@keyframes pop{
+	from{
+		transform: translateY(100%);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+.isi-pop{
+	width: 90%;
+	padding: 1rem;
+	height: 50%;
+	margin-top: 8rem;
+}
+.isi-inner-pop{
+	width: 100%;
+	height: 600px;
+}
+.saran{
+	width: 100%;
+	height: 120px;
+}
+.rem{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	min-height: 50px;
+	min-width: 50px;
+	font-size: 5rem;
+	opacity: .2;
+	cursor: pointer;
+	transition: all .2s linear;
+	padding: 10px;
+}
+.rem:hover{
+	opacity: 1;
+}
+.popku{
+	/*
+
+	*/
+}
+.belibtn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	z-index: 101;
+	display: none;
+	opacity: 0;
+	animation: buy .2s ease;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+	color: white;
+    font-size: 3.5rem;
+}
+@keyframes buy{
+	0%{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	50%{
+		opacity: .7;
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+/*
+* Style untuk component di halaman pembeliah.php
+*
+*/
+.det{
+	width: 100%;
+	height: 80px;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	position: relative;
+	transition: all .3s ease;
+}
+.det1{
+	width: 100%;
+	height: 80px;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	position: relative;
+	transition: all .3s ease;
+}
+.new{
+	height: 300px;
+}
+.min{
+	position: absolute;
+    top: 0;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    font-size: 2.2rem;
+    text-align: center;
+    transition: all .1s ease;
+}
+.chkout{
+	width: 100%;
+    min-height: 50px;
+    padding: 1rem;
+    text-align: center;
+    background: #FF5722;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.chkout:hover{
+	background: black;
+	font-size: 2.9rem;
+}
+
+/*
+* Style untuk di front page
+*
+*/
+.bat{
+	padding: 20px 0 20px 0;
+    background-image: url(../../bingke/gambar/map.png);
+    background-size: contain;
+}
+.cont{
+	width: 100%;
+	min-height: 200px;
+}
+.cont-cat{
+	width: 100%;
+	padding: 0 .5rem;
+	/* box-shadow: 0 0 5px 2px rgba(0,0,0,.2); */
+	border-radius: 10px;
+	background: white;
+}
+.gbr-cat{
+	width: 100%;
+	height: 220px;
+	margin-bottom: 16px;
+	position: relative;
+	overflow: hidden;
+}
+
+/*
+* Mobile
+*
+*/
+@media (max-width: 360px){
+	.konfirm{
+		width: 100%;
+	}
+	.gbr-cat{
+		height: 100px;
+	}
+	.gbr-cat1{
+		height: 200px;
+	}
+	.isi-inner-pop{
+		height: 250px;
+	}
+	.menusub{
+		display: none;
+	}
+	.brandku{
+		font-size: 4rem;
+	}
+	.option{
+		display: visible;
+	}
+	.dekstop-btn{
+		display: none;
+	}
+	.headerku{
+		min-height: 325px;
+		overflow: hidden;
+	}
+	.burg-menu{
+		display: block;
+	}
+
+}
+
+
+.burg-menu{
+	position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: .1rem 1.3rem;
+    z-index: 1;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: #9E9E9E;
+    border-radius: 3px;
+    opacity: .5;
+    color: white;
+    border: 2px solid white;
+}
+.burg-menu:hover{
+	opacity: 1;
+}
+.sidenav{
+	width: 100%;
+	min-height: 30%;
+	top: 0;
+	right: 0;
+	padding: 1rem 1rem 2.3rem 1rem;
+	background: black;
+	position: fixed;
+	display: none;
+	z-index: 1;
+	transition: all .3s ease-in;
+	animation: side .2s ease;
+}
+@keyframes side{
+	from{
+		transform: translateY(-30px);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+.sidenav ul li{
+	margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.sidenav ul li a{
+	color: white;
+}
+.sidenav ul li ul li{
+	border-bottom: none;
+}
+
+.drop-side{
+	width: 100%;
+    margin-left: 3rem;
+    list-style-type: none;
+    height: 0;
+    overflow-y: hidden;
+    transition: all 2s ease;
+}
+.drp-menu:hover .drop-side, .drp-menu:focus .drop-side{
+	height: auto;
+    overflow-y: none;
+}
+.out{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 .5rem;
+    font-size: 2rem;
+    color: white;
+}
+.out:hover, .out:focus{
+	font-size: 2.5rem;
+}
+/*************************/
+
+@media (min-width: 361px){
+	.option{
+		display: none;
+	}
+	.burg-menu{
+    	display: none;
+	}
+}
+
+
+/*
+* Tool Tip
+*
+*/
+.option{
+	position: relative;
+}
+.option:hover .cont-tbl1{
+	display: block;
+}
+
+.cont-tbl1{
+	position: absolute;
+	left: -75px;
+    top: 5px;
+	min-width: 80px;
+	background: white;
+	border-radius: 0 2px 0 0;
+	display: none;
+	animation: tool .2s ease;
+    z-index: 1;
+    border: 1px solid rgba(0,0,0,.05);
+    box-shadow: -1px 2px 2px 1px rgba(0,0,0,.19);
+}
+
+@keyframes tool{
+	from{
+		transform: translateX(10px);
+		opacity: .5;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+/* .cont-tbl1::after{
+	content: " ";
+	position: absolute;
+	top: 2px;
+	right: -16px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent transparent rgba(0,0,0,.15);
+} */
+
+.ket-cat{
+	width: 100%;
+	height: 70px;
+	padding-top: 1rem;
+	position: relative;
+}
+.tbl-cat{
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.tbl1{
+	min-width: 30px;
+	padding: 3px;
+	min-height: 20px;
+	color: white;
+	text-align: center;
+	margin-bottom: 5px;
+	border-radius: 3px
+}
+.cont-slide{
+	width: 100%;
+}
+.cont-foot{
+	width: 100%;
+	min-height: 150px;
+	border-radius: 10px;
+	padding-left:  15px;
+	padding-top: 1px;
+	padding-right: 15px;
+	text-align: center;
+	color: white;
+}
+
+
+.mgbtm{
+	margin-bottom: 2rem;
+}
+.kontainer{
+	width: 100%;
+	padding: 2% 3% 3% 3%;
+	overflow-x: hidden;
+	background: #f5f5f5;
+}
+.about-cont{
+	width: 100%;
+    min-height: 400px;
+    padding: 1rem 2rem;
+    border-radius: 10px 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    color: white;
+    background: rgba(8, 78, 53, 0.89);
+}
+.about-cont p{
+	font-size: 2rem;
+	text-indent: 20px;
+	text-align: justify;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.jud{
+	padding: 1rem;
+    border-left: 3px solid #38ef38;
+}
+.tent{
+	padding: 2rem 1rem;
+    color: white;
+    font-weight: bold;
+    background: rgb(25, 92, 66);
+    border-radius: 10px 10px 0 0;
+}
+.ord-now{
+	width: 100%;
+	padding: 1rem;
+	font-size: 5rem;
+	color: white;
+	border-radius: 50px;
+}
+
+.ft{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 1rem;
+}
+.help-text{
+	font-size: 1,2rem;
+}
+.ads{
+	width: 100%;
+	background: #6b0a43;
+}
+.isi-ads{
+	width: 100%;
+	min-height: 300px;
+	padding: 1rem;
+	color: white;
+	text-align: left;
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+.tbl{
+	width: 96%;
+    padding: 1rem;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    /*left: 2%;*/
+    background: grey;
+    text-align: center;
+    cursor: pointer;
+    border-color: grey;
+}
+
+
+/*
+* Style untuk Slide di front page
+*
+*/
+.cont-ket{
+	position: relative;
+}
+.tbl-sld{
+	background: #1a351b;
+	border-color: #1a351b;
+	transition: all .05s linear;
+}
+.tbl-sld:hover, .tbl-sld:focus{
+	background: #0c1b0d;
+    border-color: #0c1b0d;
+    font-size: 1.5rem;
+}
+.ket-cont-slide{
+	width: 100%;
+	height: 100%;
+	background: #274c28;
+	text-align: justify;
+	color: white;
+}
+.ket-slide{
+	animation: gaya .5s ease;
+	padding: 0 10px 10px 10px;
+}
+.ket-slide p{
+	font-size: 1.5rem;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+@keyframes gaya{
+	from{
+		transform: scale(-2);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+
+
+.tbl-def{
+	background: #520532;
+    border-color: #4e0430;
+    font-size: 3rem;
+    transition: all .05s linear;
+}
+.tbl-def:hover, .tbl-def:focus{
+	background: #3c0324;
+    border-color: #3c0324;
+    font-size: 3.2rem;
+}
+.bd{
+	width: 100%;
+	padding: 1rem;
+	color: white;
+	font-size: 4rem;
+	text-align: center;
+	font-weight: bold;
+}
+.bot{
+	position: absolute;
+	bottom: 25px;
+}
+
+
+/*
+* Style untuk Footer
+*
+*/
+.footerku{
+	width: 100%;
+	min-height: 300px;
+	background-color: #23292c;
+	padding-top: 2rem;
+}
+.hrku{
+	border-top: 3px solid #14171987;
+}
+.copy{
+	width: 100%;
+	color: grey;
+	padding: 5px;
+	text-align: center;
+}
+
+
+.textareas{
+	width: 100%;
+	resize: none;
+}
+.textfieldkontak{
+	border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: 0;
+    width: 80%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contcontact{
+	width: 100%;
+	min-height: 200px;
+	background: #eee;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.4);
+}
+.footer-text{
+
+	font-size: 1,2rem;
+	color: #2c2c2c;
+}
+.batcontact{
+	background-color: #a2d0af;
+	padding: 20px 0 20px 0;
+
+}
+.logokufoot{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 15px;
+}
+/*.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}*/
+.logopesan{
+	max-width: 150px;
+	max-height: 150px;
+	padding-bottom: 20px;
+	margin-top: 5rem;
+	cursor: pointer;
+}

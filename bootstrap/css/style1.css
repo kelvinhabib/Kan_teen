@@ -1,0 +1,157 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+.headerku{
+	width: 100%;
+	min-height: 400px;
+	background: url(../../bingke/gambar/bghead.png);
+	position: relative;
+	background-image: contain;
+}
+.logoku{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 5px;
+
+}
+
+.brandku{
+	min-width: 100%;
+    min-height: 50px;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+.menuku{
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	text-align: center;
+}
+.menusub{
+	margin: 0;
+}
+.menusub li{
+	list-style-type: none;
+	display: inline-block;
+
+}
+.menusub li a{
+	text-decoration: none;
+	color: white;
+	text-align: left;
+	font-size: 4rem;
+	padding: 10px;
+}
+.menusub li a:hover{
+	background: grey;
+}
+.bat{
+	padding: 20px 0 20px 0;
+}
+.cont{
+	width: 100%;
+	min-height: 200px;
+	background: white;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.4);
+	font-size: 2rem;
+}
+
+.cont-foot{
+	width: 100%;
+	min-height: 250px;
+	background-color: #62a83d;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.4);
+	border-radius: 10px;
+	padding-left:  15px;
+	padding-top: 1px;
+	padding-right: 15px;
+}
+
+.footerku{
+	width: 100%;
+	min-height: 300px;
+	background-color: #23292c;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 2rem;
+}
+.mgbtm{
+	margin-bottom: 2rem;
+}
+
+
+
+/**/
+
+
+
+.about-cont{
+	width: 100%;
+	min-height: 400px;
+	background: grey;
+}
+.textareas{
+	width: 100%;
+	resize: none;
+}
+.textfieldkontak{
+	border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    outline: 0;
+    width: 80%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contcontact{
+	width: 100%;
+	min-height: 200px;
+	background: #eee;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.4);
+}
+.footer-text{
+	
+	font-size: 1,2rem;
+	color: #2c2c2c;
+}
+.batcontact{
+	background-color: #a2d0af; 
+	padding: 20px 0 20px 0;
+
+}
+.logokufoot{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 15px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
